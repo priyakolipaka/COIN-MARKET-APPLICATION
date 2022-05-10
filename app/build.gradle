@@ -51,16 +51,16 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-beta01"
 
     implementation project(path: ':coin-data')
-    implementation("androidx.room:room-runtime:2.4.2")
-    annotationProcessor("androidx.room:room-compiler:2.4.2")
+   // implementation("androidx.room:room-runtime:2.4.2")
+   // annotationProcessor("androidx.room:room-compiler:2.4.2")
 
     // To use Kotlin annotation processing tool (kapt)
-    kapt("androidx.room:room-compiler:2.4.2")
+   // kapt("androidx.room:room-compiler:2.4.2")
     // To use Kotlin Symbolic Processing (KSP)
 
 
     // optional - Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:2.4.2")
+   // implementation("androidx.room:room-ktx:2.4.2")
 
 
 

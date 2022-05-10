@@ -1,6 +1,5 @@
 package com.example.coin_data.repository
 
-import androidx.room.Database
 import com.example.coin_data.api.CoinApi
 import com.example.coin_data.model.ExampleJson2KtKotlin
 

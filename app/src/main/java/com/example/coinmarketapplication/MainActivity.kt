@@ -10,16 +10,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.coinmarketapplication.databinding.ActivityMainBinding
-import com.example.coinmarketapplication.roomDatabase.CoinDataBase
+//import com.example.coinmarketapplication.roomDatabase.CoinDataBase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var coinViewModel: CoinViewModel
 
-    private val dataBase:CoinDataBase
-        get() {
-            TODO()
-        }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                                 override fun onItemClick(position: Int) {
                                     Toast.makeText(
                                         context,
-                                        "market_cap_dominance of ${coinData.data[position].symbol} is ${coinData.data[position].quote?.USD?.marketCapDominance}",
+                                        "market_cap_dominance of ${coinData.data[position].symbol}  is ${coinData.data[position].quote?.USD?.marketCapDominance}",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }
@@ -59,19 +56,3 @@ class MainActivity : AppCompatActivity() {
 }
 
 
-/* class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        if(savedInstanceState==null){
-            supportFragmentManager.beginTransaction().replace(R.id.fragment, CoinFragment.newInstance()).commit()
-        }
-
-
-    }
-}
-
- */

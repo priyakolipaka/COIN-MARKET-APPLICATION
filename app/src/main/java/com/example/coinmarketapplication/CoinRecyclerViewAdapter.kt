@@ -65,8 +65,8 @@ class CoinRecyclerViewAdapter(private val coinData: List<Data>) :
         return coinData.size
     }
 
-    fun setOnItemClickListener(listener: AdapterView.OnItemClickListener) {
-
-    }
+//    fun setOnItemClickListener(listener: AdapterView.OnItemClickListener) {
+//
+//    }
 }
 
