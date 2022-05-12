@@ -9,7 +9,10 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.room.PrimaryKey
 import com.example.coinmarketapplication.databinding.ActivityMainBinding
+import com.google.gson.annotations.SerializedName
+
 //import com.example.coinmarketapplication.roomDatabase.CoinDataBase
 
 class MainActivity : AppCompatActivity() {
@@ -53,6 +56,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
 
 

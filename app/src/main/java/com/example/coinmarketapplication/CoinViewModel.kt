@@ -17,8 +17,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
 class CoinViewModel(
-   // app: Application
-): ViewModel() {
+    application: Application
+): AndroidViewModel(application) {
     private var coinRepository = Instance.getCoinRepository()
     //private abstract val CoinDataBase : CoinDataBase
 
@@ -29,6 +29,7 @@ class CoinViewModel(
 
     init {
         viewModelScope.launch {
+
             coinMutableFlow.value = coinRepository.getCoinData()
         }
     }
