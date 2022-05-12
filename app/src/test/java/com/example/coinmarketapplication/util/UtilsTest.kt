@@ -9,10 +9,10 @@ import org.junit.runners.JUnit4
 class UtilsTest{
 
 
-    @Test
+   /* @Test
     fun stringValidator_correctString_ReturnsTrue(){
         assertTrue(Utils.isValidString("samplestring"))
-    }
+    }*/
 
 
 

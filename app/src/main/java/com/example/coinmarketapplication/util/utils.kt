@@ -6,12 +6,12 @@ class Utils {
 
 
 
-        fun isValidString(symbol: String?): Boolean {
+        /*fun isValidString(symbol: String?): Boolean {
             if (symbol is String && symbol.isNullOrEmpty()) {
                 return true
             }
             return false
-        }
+        }*/
     }
 
 
