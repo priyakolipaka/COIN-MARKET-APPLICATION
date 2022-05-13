@@ -4,10 +4,11 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import com.example.coin_data.model.Data
-import com.example.coin_data.model.ExampleJson2KtKotlin
 
-@Database(entities = [Data::class], version = 1)
+@Database(entities = [Data::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class CoinDataBase: RoomDatabase() {
     abstract fun getRoomDao(): RoomDao
 
