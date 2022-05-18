@@ -25,8 +25,6 @@ class CoinViewModel(
             coinMutableFlow.value = roomDao.getData()
         }
     }
-
-
 }
 
 
